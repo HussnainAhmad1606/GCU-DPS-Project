@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 /*
 =======================================================
 Animation for the body when loading screen disappears
@@ -21,7 +20,7 @@ Animation for the body when loading screen disappears
 
 @keyframes bodyAnimate {
     0% {
-        margin-top: 500px;
+        margin-top: 800px;
     }
     100% {
         margin-top: 0px;
@@ -47,12 +46,22 @@ By Default Whole website will not shown and loading screen will be shown after 5
     align-items: center;
 }
 
+nav {
+    background-color: var(--GcuRed) !important;
+    color: white;
+}
+nav a, #toggler {
+    color: white !important;
+}
 
+#dropdown li a {
+    color: black !important;
+}
 /* 
 ================
 	Nav bar 
 ================
-*/
+
 
 #hamburger {
     font-size: 20px;
@@ -93,7 +102,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
-
+*/
 
 /* 
 ========================
@@ -158,7 +167,7 @@ nav ul li a {
 canvas {
     background-color: var(--GcuRed);
     width: 100%;
-    height: 100vh !important;
+    height: 100vh;
 }
 #loadingDiv {
     position: absolute;
@@ -167,7 +176,6 @@ canvas {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
     font-size: 20px;
     transform: rotate(270deg);
     flex-flow: column wrap;
@@ -177,7 +185,7 @@ canvas {
 #loadingIcon {
     font-size: 50px;
     position: relative;
-    right: 0px;
+    right: 300px;
     color: white;
     transition: 0.1s ease all;
     animation: loadingAnimation 5s linear;
@@ -185,16 +193,18 @@ canvas {
 
 @keyframes loadingAnimation {
     0% {
-        right: 800px;
+        right: 1000px;
     }
     100% {
-        right: 400px;
+        right: 300px;
     }
 }
 @keyframes loadingSpeedAnimation {
-    
+    0% {
+        right: 300px;
+    }
     100% {
-        right: -200px;
+        right: -1000px;
     }
 }
 

@@ -36,27 +36,39 @@
         </div>
     </div>
     <div id="website">
-        <nav id="navbar">
-            <div id="hamburger" class="close">
-                <i id="openHamburgerIcon" class="fas fa-bars"></i>
-            </div>
-            <ul id="menus">
-                <li><a href="#">Home</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Pricing <i class="icon fas fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">One Way</a>
-                            <a href="#">Two Way</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="assets/pages/book.html">Book Now</a></li>
-                <li><a href="assets/pages/contact.html">Contact</a></li>
+        <nav class="text-white navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">DPS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="toggler" class="text-white navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pricing
+          </a>
+          <ul id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">One Way</a></li>
+            <li><a class="dropdown-item" href="#">Two Way</a></li>
+          </ul>
+        </li>
 
-            </ul>
-        </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/pages/contact.html">Contact Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="assets/pages/book.html">Book Now</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -134,12 +146,12 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint a aperiam amet, tempore consequatur repellendus quae ea illo quaerat fugiat eaque reiciendis accusantium, suscipit, eligendi quasi velit. Ad, blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nihil corporis, quae dolorum, eius laudantium itaque ex illum explicabo rerum fuga laboriosam fugiat magnam nulla! Saepe quibusdam perspiciatis unde, officiis. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Cumque optio at incidunt doloribus labore, velit quasi necessitatibus dignissimos exercitationem, ad. Cumque ipsam maiores voluptatum consequuntur non in, ut, accusantium ad.</p>
         </div>
         
-       	<!-- <model-viewer data-aos="fade-left" src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar>
+       	<model-viewer data-aos="fade-left" src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar>
             
             <div class="progress-bar" slot="progress-bar">
         <div class="update-bar"></div>
       </div>
-        </model-viewer> -->
+        </model-viewer>
        </div>
 
         <div data-aos="fade-down" data-aos-duration="1500" id="properties">
@@ -202,10 +214,10 @@
             loading.style.display = "none";
             website.style.display = "block";
 
-            body.style.animation = "bodyAnimate 0.5s linear";
+            body.style.animation = "bodyAnimate 2s linear";
             body.style.transition = "5s ease all";
 
-        }, 200);
+        }, 8000);
 
 
         setTimeout(() => {

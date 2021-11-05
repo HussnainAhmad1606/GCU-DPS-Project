@@ -5,31 +5,31 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 
 // Hamburger logic
-let hamburger = document.getElementById("hamburger");
-let openHamburgerIcon = document.getElementById("openHamburgerIcon");
-let closeHamburgerIcon = document.getElementById("closeHamburgerIcon");
-let menus = document.getElementById("menus");
-let navbar = document.getElementById("navbar");
-hamburger.addEventListener("click", function() {
-    console.log("Clicked");
-    if (hamburger.classList.contains("close")) {
-        hamburger.classList.toggle("close");
-        hamburger.innerHTML = `<i id="openHamburgerIcon" class="fas fa-close"></i>`;
-        console.log("Opened");
-        hamburger.classList.remove("close");
-        hamburger.classList.add("open");
-        navbar.style.height = "30vh";
-        menus.style.display = "block";
-        navbar.style.display = "flex";
-        navbar.style.flexDirection = "column";
-    } else {
-        hamburger.innerHTML = `<i id="closeHamburgerIcon" class="fas fa-bars"></i>`;
-        console.log("Closed");
-        hamburger.classList.add("close");
-        menus.style.display = "none";
-        navbar.style.height = "8vh";
-    }
-});
+// let hamburger = document.getElementById("hamburger");
+// let openHamburgerIcon = document.getElementById("openHamburgerIcon");
+// let closeHamburgerIcon = document.getElementById("closeHamburgerIcon");
+// let menus = document.getElementById("menus");
+// let navbar = document.getElementById("navbar");
+// hamburger.addEventListener("click", function() {
+//     console.log("Clicked");
+//     if (hamburger.classList.contains("close")) {
+//         hamburger.classList.toggle("close");
+//         hamburger.innerHTML = `<i id="openHamburgerIcon" class="fas fa-close"></i>`;
+//         console.log("Opened");
+//         hamburger.classList.remove("close");
+//         hamburger.classList.add("open");
+//         navbar.style.height = "30vh";
+//         menus.style.display = "block";
+//         navbar.style.display = "flex";
+//         navbar.style.flexDirection = "column";
+//     } else {
+//         hamburger.innerHTML = `<i id="closeHamburgerIcon" class="fas fa-bars"></i>`;
+//         console.log("Closed");
+//         hamburger.classList.add("close");
+//         menus.style.display = "none";
+//         navbar.style.height = "8vh";
+//     }
+// });
 
 
 // Properties Hover Logic

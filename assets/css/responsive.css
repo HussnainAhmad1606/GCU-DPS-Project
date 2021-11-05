@@ -12,6 +12,21 @@
 
 
 @media only screen and (max-width: 880px) {
+    #modelViewer {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        flex-direction: column !important;
+    }
+
+    #modelViewer div.info {
+        width: 80%;
+    }
+
+    #modelViewer model-viewer {
+        width: 80%;
+    }
+
     #properties {
     grid-template-columns: auto auto;
     }
