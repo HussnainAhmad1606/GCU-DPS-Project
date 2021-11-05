@@ -283,25 +283,25 @@ footer h1 b a:hover {
 }
 
 #plantsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/plants.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/plants.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #AnimalsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/animals.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/animals.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #AtmosphereProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/atmosphere.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/atmosphere.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #MineralsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/minerals.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/minerals.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
