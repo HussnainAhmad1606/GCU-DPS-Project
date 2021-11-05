@@ -1,0 +1,489 @@
+/*
+==========================
+    Universal Styling
+==========================
+*/
+:root {
+    --GcuRed: #922121;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+=======================================================
+Animation for the body when loading screen disappears
+=======================================================
+*/
+
+@keyframes bodyAnimate {
+    0% {
+        margin-top: 500px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+
+/*
+=================
+By Default Whole website will not shown and loading screen will be shown after 5 seconds website will automatically appears with animation using JavaScript
+=================
+*/
+
+#website {
+    display: none;
+}
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+================
+	Nav bar 
+================
+*/
+
+#hamburger {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#menus {
+    display: flex;
+    flex-direction: row !important;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 8vh;
+    background-color: var(--GcuRed);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0px 20px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 
+========================
+	Dropdown Styling 
+========================
+*/
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    background-color: var(--GcuRed);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* 
+======================
+	DropDown Icon + All Icons Size (If Use in Website)
+======================
+*/
+
+.icon {
+    font-size: 10px
+}
+
+
+/* 
+==========================================
+	Loading Screen When Website Opens
+==========================================
+*/
+canvas {
+    background-color: var(--GcuRed);
+    width: 100%;
+    height: 100vh !important;
+}
+#loadingDiv {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    transform: rotate(270deg);
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+#loadingIcon {
+    font-size: 50px;
+    position: relative;
+    right: 0px;
+    color: white;
+    transition: 0.1s ease all;
+    animation: loadingAnimation 5s linear;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        right: 800px;
+    }
+    100% {
+        right: 400px;
+    }
+}
+@keyframes loadingSpeedAnimation {
+    
+    100% {
+        right: -200px;
+    }
+}
+
+
+/* 
+========================
+        Footer 
+========================
+*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 18vh;
+    background-color: var(--GcuRed);
+    color: white;
+}
+
+footer h1 {
+    font-size: 18px;
+}
+
+footer h1 b a {
+    text-decoration: none;
+    color: white;
+}
+
+footer h1 b a:hover {
+    color: #cfc3c3
+}
+
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(145, 92, 182);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+.button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 15px rgba(145, 92, 182, .4);
+  }
+
+/* 
+======================
+	Properties
+======================
+*/
+#properties {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px 0px;
+}
+
+.property {
+    width: 100%;
+    border-left: 1px solid var(--GcuRed); 
+    border-right: 1px solid var(--GcuRed); 
+    border-collapse: collapse;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.propertiesHead {
+    font-size: 20px;
+}
+
+.property p {
+    display: none;
+}
+
+.property:hover {
+    transform: scale(1.02);
+    filter: brightness(1.8);
+}
+
+#plantsProp {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/plants.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#AnimalsProp {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/animals.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#AtmosphereProp {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/atmosphere.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#MineralsProp {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/minerals.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 
+=========================
+    Contact Us Form
+=========================
+*/
+
+#contactUs form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+}
+
+#contactUs form input {
+    width: 150%;
+    padding: 5px 10px;
+}
+#contactUs form textarea {
+    width: 155%;
+    height: 150px;
+    padding: 5px 10px;
+}
+
+#contactUs form input:focus, #contactUs form textarea:focus {
+    border: 2px solid;
+    border-color: var(--GcuRed);
+}
+
+#contactFormBtn {
+    border: 2px solid var(--GcuRed);
+    color: var(--GcuRed);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: none;
+    transition: 0.3s ease all;
+}
+
+#contactFormBtn:hover {
+    background-color: var(--GcuRed);
+    color: white;
+}
+
+/* 
+=========================
+    Astronaut Div
+=========================
+*/
+
+#modelViewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#modelViewer model-viewer {
+    height: 600px;
+    width: 600px;
+}
+
+#modelViewer div {
+    width: 50%;
+}
+
+
+/*
+==================================
+    Section after Carousel
+==================================
+
+====================
+    Main Section
+====================
+*/
+#importantNotesDiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-collapse: collapse;
+}
+
+#modelDiv {
+    margin: 20px;
+    border-collapse: collapse;
+}
+#modelDiv div {
+    width: 50%;
+}
+
+#modelDiv div#notesModel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modelDiv div#notesModel model-viewer{
+    width: 200px;
+    height: 200px;
+}
+
+#modelDiv div#notesInfo {
+    padding: 5px;
+}
+
+
+/*
+=======================
+Note to animate From Bottom to Top and vice versa
+=======================
+*/
+
+#importantNote {
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+#animateNote {
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s ease all;
+    animation: bottomToTop 15s alternate infinite;
+}
+
+@keyframes bottomToTop {
+    to {
+        top: 300px;
+    }
+    from {
+        top: -300px;
+    }
+}
+
+/*
+=======================
+    2D Photo Div
+=======================
+*/
+
+#twoDPicDiv {
+    margin: 20px;
+    height: 300px !important;
+    width: 400px !important;
+    background: url("../img/astronaut.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+#twoDPicDiv p {
+    padding: 30px;
+    text-align: center;
+}
+
+#twoDPicDiv * {
+    display: none;
+}
+
+#twoDPicDiv:hover {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/astronaut.jpg");
+
+}
+
+#twoDPicDiv:hover * {
+    display: block;
+}
+
+
+/*
+==========================================
+    Div that contains 3D Model and text
+==========================================
+*/
+#modelDiv {
+    display: flex;
+}

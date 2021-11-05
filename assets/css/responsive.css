@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    #hamburger {
+        float: left;
+        display: block;
+    }
+
+    #menus {
+        display: none;
+    }
+
+    #importantNotesDiv .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+	}
+
+	#modelViewer {
+		flex-direction: column;
+	}
+	#modelViewer div {
+    width: 80%;
+    text-align: center;
+}
+
+	#properties {
+    grid-template-columns: auto;
+	}
+	#contactUs form input {
+    width: 100%;
+}
+	#contactUs form textarea {
+    width: 100%;
+}
+
+#importantNote {
+	height: 800px;
+}
+#twoDPicDiv {
+	height: 200px !important;
+    width: 300px !important;
+}
+}
