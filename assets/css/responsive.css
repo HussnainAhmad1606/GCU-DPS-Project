@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+	#openHamburgerIcon, #closeHamburgerIcon {
+    color: white !important;
+}
+
     #hamburger {
         float: left;
         display: block;
@@ -8,12 +12,19 @@
         display: none;
     }
 
-    #importantNotesDiv .row {
-    display: flex;
+    #importantNotesDiv {
+    display: flex !important;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
+    width: 100%
+	}
+	#modelDiv {
+		width: 80%;
+	}
+	#importantNote {
+		width: 80%;
+		height: 300px !important;
 	}
 
 	#modelViewer {

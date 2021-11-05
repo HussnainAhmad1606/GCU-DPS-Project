@@ -60,6 +60,10 @@ By Default Whole website will not shown and loading screen will be shown after 5
     cursor: pointer;
 }
 
+#openHamburgerIcon, #closeHamburgerIcon {
+    color: white !important;
+}
+
 #menus {
     display: flex;
     flex-direction: row !important;
@@ -262,7 +266,7 @@ footer h1 b a:hover {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-    transition: 0.5s ease all;
+    transition: 0.8s ease all;
 }
 
 .propertiesHead {
@@ -274,30 +278,30 @@ footer h1 b a:hover {
 }
 
 .property:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     filter: brightness(1.8);
 }
 
 #plantsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/plants.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/plants.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #AnimalsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/animals.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/animals.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #AtmosphereProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/atmosphere.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/atmosphere.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #MineralsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/minerals.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/Properties/minerals.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -387,6 +391,7 @@ footer h1 b a:hover {
 
 #modelDiv {
     margin: 20px;
+    margin-right: 20px;
     border-collapse: collapse;
 }
 #modelDiv div {
@@ -417,10 +422,10 @@ Note to animate From Bottom to Top and vice versa
 */
 
 #importantNote {
-    width: 400px;
+    width: 300px;
     height: 300px;
     padding: 5px;
-    margin: 20px;
+    margin: 20px 30px;
     display: flex;
     flex-flow: column wrap;
     overflow: hidden;
@@ -449,7 +454,7 @@ Note to animate From Bottom to Top and vice versa
 */
 
 #twoDPicDiv {
-    margin: 20px;
+    margin: 20px 0px;
     height: 300px !important;
     width: 400px !important;
     background: url("../img/astronaut.jpg");
@@ -486,4 +491,5 @@ Note to animate From Bottom to Top and vice versa
 */
 #modelDiv {
     display: flex;
+    width: 500px;
 }
