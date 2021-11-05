@@ -1,4 +1,45 @@
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 1340px) {
+  #importantNotesDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    }  
+
+}
+
+
+
+
+@media only screen and (max-width: 880px) {
+    #properties {
+    grid-template-columns: auto auto;
+    }
+
+    #importantNotesDiv {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+    }
+
+    #modelDiv {
+        width: 80%;
+    }
+    #importantNote {
+        width: 80%;
+        height: 300px !important;
+    }
+    #twoDPicDiv {
+        width: 530px !important;
+        height: 400px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
 	#openHamburgerIcon, #closeHamburgerIcon {
     color: white !important;
 }
