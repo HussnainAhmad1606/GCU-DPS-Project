@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/components/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styling -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,13 +18,13 @@
     />
 
     <!-- Model Viewer for Viewing Models on Homepage -->
-    <script type="module" src="assets/model-viewer/model-viewer.min.js"></script>
+    <script type="module" src="assets/components/model-viewer/model-viewer.min.js"></script>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 
     <!-- For Div Animation -->
- <link rel="stylesheet" href="assets/aos/aos.css" />
+ <link rel="stylesheet" href="assets/components/aos/aos.css" />
 
     <title>DPS Project</title>
 </head>
@@ -51,9 +51,9 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Routes</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="assets/pages/book.html">Book Now</a></li>
+                <li><a href="assets/pages/contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -103,7 +103,7 @@
                 <div data-aos="zoom-in" class="border col col-sm-12" id="modelDiv">
 
                     <div class="border" id="notesModel">
-                     <!-- <model-viewer src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar></model-viewer> -->
+                     <model-viewer src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar></model-viewer>
                     </div>
 
                 <div class="border" id="notesInfo">
@@ -142,49 +142,41 @@
         </model-viewer> -->
        </div>
 
-        <div id="properties">
-            <div data-aos="flip-up" data-aos-duration="1500" class="property" id="plantsProp">
+        <div data-aos="flip-up" data-aos-duration="1500" id="properties">
+            <div class="property" id="plantsProp">
                 <h1 class="propertiesHead">Plants like Organism</h1>
-                <p>Get details about plants</p>
+                <div class="propDetails">
+                    <p>Get details about plants</p>
+                    <a class="propBtn" href="assets/pages/plants.html">Learn More</a>
+                </div>
             </div>
             
-            <div data-aos="flip-up" data-aos-duration="1500" class="property" id="AnimalsProp">
+            <div class="property" id="AnimalsProp">
                 <h1 class="propertiesHead">Motile Organisms</h1>
-                <p>Get details about Organisms</p>              
+                <div class="propDetails">
+                    <p>Get details about Motile Organisms</p>
+                    <a class="propBtn" href="assets/pages/motile.html">Learn More</a>
+                </div>              
             </div>
             
-            <div data-aos="flip-up" data-aos-duration="1500" class="property" id="AtmosphereProp">
+            <div class="property" id="AtmosphereProp">
                 <h1 class="propertiesHead">Atmosphere On Planet</h1>
-                <p>Get details about Atmosphere</p>      
+                <div class="propDetails">
+                    <p>Get details about Atmosphere</p>
+                    <a class="propBtn" href="assets/pages/atmosphere.html">Learn More</a>
+                </div>     
             </div>
             
-            <div data-aos="flip-up" data-aos-duration="1500" class="property" id="MineralsProp">
+            <div class="property" id="MineralsProp">
                 <h1 class="propertiesHead">Minerals On Planet</h1>
-                <p>Get details about plants</p>
+               <div class="propDetails">
+                    <p>Get details about Minerals</p>
+                    <a class="propBtn" href="assets/pages/minerals.html">Learn More</a>
+                </div>
             </div>
         </div>
         
-        <center>
-            <h1>Contact Us</h1>
-        </center>
-
-        <div id="contactUs">
-            <form>
-                <div class="form-field">
-                    <p>Full Name: </p>
-                    <input type="text" />
-                </div>
-                <div class="form-field">
-                    <p>Email: </p>
-                    <input type="email" />
-                </div>
-                <div class="form-field">
-                    <p>Message: </p>
-                    <textarea></textarea>
-                </div>
-                <button id="contactFormBtn">Send Message</button>
-            </form>
-        </div>
+       
 
        	<footer>
        		<h1>Copyright © 2021</h1>
@@ -196,9 +188,9 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/components/bootstrap/bootstrap.bundle.min.js"></script>
 
-      <script src="assets/aos/aos.js"></script>
+      <script src="assets/components/aos/aos.js"></script>
 
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/app.js"></script>

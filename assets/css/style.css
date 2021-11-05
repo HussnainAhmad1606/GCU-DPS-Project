@@ -266,20 +266,32 @@ footer h1 b a:hover {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-    transition: 0.8s ease all;
+    transition: 0.1s ease all;
+}
+
+.property:hover {
+    filter: brightness(1.5);
 }
 
 .propertiesHead {
     font-size: 20px;
 }
 
-.property p {
+.property div.propDetails {
+    text-align: center;
     display: none;
 }
+.propBtn {
+    color: white;
+    background-color: var(--GcuRed);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.2s ease all;
+}
 
-.property:hover {
-    transform: scale(1.05);
-    filter: brightness(1.8);
+.propBtn:hover {
+    color: #d9d5d5;
 }
 
 #plantsProp {
@@ -305,50 +317,6 @@ footer h1 b a:hover {
     background-position: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-/* 
-=========================
-    Contact Us Form
-=========================
-*/
-
-#contactUs form {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-    flex-direction: column;
-}
-
-#contactUs form input {
-    width: 150%;
-    padding: 5px 10px;
-}
-#contactUs form textarea {
-    width: 155%;
-    height: 150px;
-    padding: 5px 10px;
-}
-
-#contactUs form input:focus, #contactUs form textarea:focus {
-    border: 2px solid;
-    border-color: var(--GcuRed);
-}
-
-#contactFormBtn {
-    border: 2px solid var(--GcuRed);
-    color: var(--GcuRed);
-    border-radius: 10px;
-    padding: 10px 20px;
-    background: none;
-    transition: 0.3s ease all;
-}
-
-#contactFormBtn:hover {
-    background-color: var(--GcuRed);
-    color: white;
 }
 
 /* 
@@ -435,7 +403,7 @@ Note to animate From Bottom to Top and vice versa
     position: relative;
     overflow: hidden;
     transition: 0.1s ease all;
-    animation: bottomToTop 15s alternate infinite;
+    animation: bottomToTop 30s alternate linear infinite;
 }
 
 @keyframes bottomToTop {

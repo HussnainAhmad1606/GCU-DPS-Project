@@ -38,6 +38,7 @@ console.log(properties);
 
 for (let i = 0; i < properties.length; i++) {
     properties[i].addEventListener("mouseover", function() {
+        console.log(properties[0].childNodes)
         let para = properties[i].childNodes[3];
         para.style.display = "inline";
     })
