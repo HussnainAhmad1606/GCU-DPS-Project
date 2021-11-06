@@ -80,6 +80,23 @@ nav a, #toggler {
     text-align: center;
     color: black !important;
 }
+
+
+
+a.nav-link:hover {
+    color: #c1bbbb !important;
+
+}
+
+/* 
+================
+    Carousel 
+================
+*/
+.carousel-caption {
+    position: absolute;
+    top: 70vh;
+}
 /* 
 ================
 	Nav bar 

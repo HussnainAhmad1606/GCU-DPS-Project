@@ -118,4 +118,9 @@
 	height: 200px !important;
     width: 300px !important;
 }
+
+
+#main {
+    height: 150vh
+}
 }
