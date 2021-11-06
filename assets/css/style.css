@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #e9ecef;
+}
+
 /*
 =======================================================
 Animation for the body when loading screen disappears
@@ -46,15 +50,34 @@ By Default Whole website will not shown and loading screen will be shown after 5
     align-items: center;
 }
 
+#website #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--GcuRed)
+}
+
+#website #logo img {
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+}
+
+
 nav {
     background-color: var(--GcuRed) !important;
     color: white;
+}
+
+.container-fluid {
+    flex-direction: column !important;
 }
 nav a, #toggler {
     color: white !important;
 }
 
 #dropdown li a {
+    text-align: center;
     color: black !important;
 }
 /* 
@@ -252,6 +275,27 @@ footer h1 b a:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 15px 15px rgba(145, 92, 182, .4);
   }
+
+  /* 
+=============================
+    We've got you covered 
+=============================
+*/
+#gotCovered {
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#gotCovered .cover {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+#gotCovered .cover .icon i {
+    font-size: 20px;
+    margin: 5px;
+    color: var(--GcuRed) !important;
+}
 
 /* 
 ======================

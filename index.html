@@ -26,7 +26,7 @@
     <!-- For Div Animation -->
  <link rel="stylesheet" href="assets/components/aos/aos.css" />
 
-    <title>DPS Project</title>
+    <title>Space Travel - Travel Around the Space</title>
 </head>
 
 <body>
@@ -36,14 +36,16 @@
         </div>
     </div>
     <div id="website">
-        <nav class="text-white navbar navbar-expand-lg navbar-light">
+        <div id="logo">
+            <img src="assets/img/logo.jpg" alt="Website Logo">
+        </div>
+        <nav class="sticky-top text-white navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">DPS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span id="toggler" class="text-white navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -57,25 +59,10 @@
           </ul>
         </li>
 
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Inspiration
-          </a>
-          <ul id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Adventure</a></li>
-            <li><a class="dropdown-item" href="#">Arts & Culture</a></li>
-            <li><a class="dropdown-item" href="#">City Guides</a></li>
-            <li><a class="dropdown-item" href="#">Family</a></li>
-            <li><a class="dropdown-item" href="#">Food & Wine</a></li>
-            <li><a class="dropdown-item" href="#">Goods & Gear</a></li>
-            <li><a class="dropdown-item" href="#">Real Travelers</a></li>
-            <li><a class="dropdown-item" href="#">Sustainable Travel</a></li>
-            <li><a class="dropdown-item" href="#">Travel Tips</a></li>
-            <li><a class="dropdown-item" href="#">Wellness</a></li>
-
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/pages/contact.html">Inspiration</a>
         </li>
+        
 
         <li class="nav-item">
           <a class="nav-link" href="assets/pages/contact.html">Contact Us</a>
@@ -132,20 +119,20 @@
         <div id="importantNotesDiv">
 
             
-                <div data-aos="zoom-in" class="border col col-sm-12" id="modelDiv">
+                <div data-aos="zoom-in" class="border border-2 col col-sm-12" id="modelDiv">
 
                     <div class="border" id="notesModel">
                      <model-viewer src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar></model-viewer>
                     </div>
 
-                <div class="border" id="notesInfo">
+                <div class="border-2" id="notesInfo">
                     <h4>Note Info</h4>
                     <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ab qui alias sapiente officiis dolorum quasi doloremque vero, quam nobis hic sunt, vel cupiditate sint? Eveniet nesciunt assumenda ratione voluptatem doloremque?</p>
                 </div>
 
           </div>
 
-            <div data-aos="zoom-in" class="border col col-sm-12" id="importantNote">
+            <div data-aos="zoom-in" class="border-2 border col col-sm-12" id="importantNote">
                 <div id="animateNote">
                     <h1>Note: </h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Distinctio nam itaque neque tempore at. At consectetur, recusandae. Tempore voluptatem, sunt, alias consequatur dolorem sed fugit, dolores cumque ea odio maxime.</p>
@@ -166,13 +153,56 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint a aperiam amet, tempore consequatur repellendus quae ea illo quaerat fugiat eaque reiciendis accusantium, suscipit, eligendi quasi velit. Ad, blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nihil corporis, quae dolorum, eius laudantium itaque ex illum explicabo rerum fuga laboriosam fugiat magnam nulla! Saepe quibusdam perspiciatis unde, officiis. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Cumque optio at incidunt doloribus labore, velit quasi necessitatibus dignissimos exercitationem, ad. Cumque ipsam maiores voluptatum consequuntur non in, ut, accusantium ad.</p>
         </div>
         
-       	<model-viewer data-aos="fade-left" src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar>
+       	<model-viewer class="border border-2 " data-aos="fade-left" src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar>
             
             <div class="progress-bar" slot="progress-bar">
         <div class="update-bar"></div>
       </div>
         </model-viewer>
        </div>
+
+       <hr>
+           <h1>We've got you covered</h1>
+
+       <div id="gotCovered">
+
+
+        <div data-aos="zoom-in" class="cover">
+            <div class="icon">
+                <i class="fas fa-globe-europe"></i>
+            </div>
+            <div class="info">
+                <h4>Explore top attractions</h4>
+                <p>Experience the best of your destination with attractions, tours, activities and more</p>
+            </div>
+        </div>
+
+
+        <div data-aos="zoom-in" class="cover">
+            <div class="icon">
+                <i class="far fa-calendar-check"></i>
+            </div>
+            <div class="info">
+                <h4>Fast & Flexible</h4>
+                <p>Book tickets online in minutes, with free cancellation on many attractions</p>
+            </div>
+        </div>
+
+
+        <div data-aos="zoom-in" class="cover">
+            <div class="icon">
+                <i class="fas fa-headphones-alt"></i>
+            </div>
+            <div class="info">
+                <h4>Support when you need it</h4>
+                <p>Travel Space's global Customer Service Team is here to help 24/7</p>
+            </div>
+        </div>
+
+       </div>
+
+
+       <hr>
 
         <div data-aos="fade-down" data-aos-duration="1500" id="properties">
             <div class="property" id="plantsProp">
@@ -234,10 +264,7 @@
             loading.style.display = "none";
             website.style.display = "block";
 
-            body.style.animation = "bodyAnimate 2s linear";
-            body.style.transition = "5s ease all";
-
-        }, 8000);
+        }, 800);
 
 
         setTimeout(() => {

@@ -27,9 +27,14 @@
         width: 80%;
     }
 
-    #properties {
+    #properties, #gotCovered {
     grid-template-columns: auto auto;
     }
+    .cover {
+        margin: 30px 0px;
+    }
+
+
 
     #importantNotesDiv {
     display: flex !important;
@@ -91,9 +96,14 @@
     text-align: center;
 }
 
-	#properties {
+	#properties, #gotCovered {
     grid-template-columns: auto;
 	}
+
+    #gotCovered .cover {
+        width: 100%;
+    }
+
 	#contactUs form input {
     width: 100%;
 }
