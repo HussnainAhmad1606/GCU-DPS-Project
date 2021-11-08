@@ -17,36 +17,57 @@
 </head>
 <body>
 
-	<div class="backBtnDiv">
-		<a href="../../index.html" class="backToHomePage">< Back to Homepage</a>
-	</div>
-	 <center>
+	
+     <div class="backBtnDiv">
+        <a href="../../index.html" class="backToHomePage">< Back to Homepage</a>
+    </div>
+     <center>
             <h1>Book Now</h1>
             <p>If You want to book a flight from us then you can easily book a flight for you by using the form below</p>
         </center>
 
         <div id="contactUs">
-            <form>
+            <form action="https://formspree.io/f/mdoyrjgr"
+  method="POST">
                 <div class="form-field">
                     <p>Full Name: </p>
-                    <input type="text" required/>
+                    <input type="text" name="name" required/>
+                </div>
+                <div class="form-field">
+                    <p>Phone Number: </p>
+                    <input type="phone" name="phone" required/>
                 </div>
                 <div class="form-field">
                     <p>Email: </p>
-                    <input type="email"required/>
+                    <input type="email" name="_replyto" required/>
                 </div>
                 <div class="form-field">
+                    <p>Residential Address: </p>
+                    <input type="email" name="addrerss" required/>
+                </div>
+                <div class="form-field">
+                    <p>Total Tickets: </p>
+                    <input name="tickets" type="number">
+                </div>
+                <p><b><h3>Note:</h3> </b>
+                    <ul>
+                        <li>The Applicant who is applying for the outerspace travel should be at-least 18 years old</li>
+                        <li>Be sure that the applicant who wants to travel to <b>Planet Name</b> should first refered to <b>Government College University, Lahore</b></li>
+                    </ul></p>
+                <!-- <div class="form-field">
                     <p>Message: </p>
                     <textarea required></textarea>
-                </div>
+                </div> -->
                 <button id="contactFormBtn">Book Now</button>
             </form>
         </div>
 
-        	<footer>
-       		<h1>Copyright © 2021</h1>
-       		<h1>Made by <b class="credits">Hussnain</b> & <b class="credits">Zeeshan</b></h1>
-            <h1>Represented by: <b><a target="_blank" href="https://gcu.edu.pk/" rel="noopener">GCU, Lahore</a></b></h1>
-        </footer>
+            <footer>
+            <h1>Copyright © 2021</h1>
+             <h1>Represented by: <b><a target="_blank" href="https://gcu.edu.pk/" rel="noopener">GCU, Lahore</a></b></h1>
+            <h1>Made by <b class="credits">Hussnain Ahmad</b> & <b class="credits">Zeeshan Ali Shahid</b></h1>
+           
+        </footer>   
+   
 </body>
 </html>

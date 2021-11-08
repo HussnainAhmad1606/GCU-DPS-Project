@@ -14,6 +14,7 @@
 
 body {
     background-color: #e9ecef;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -54,7 +55,16 @@ By Default Whole website will not shown and loading screen will be shown after 5
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white;
     background-color: var(--GcuRed)
+}
+
+#logo h2 {
+    font-size: 18px;
+    position: relative;
+    top: -50px;
+    font-family: "Sun Valley - Demo", san-serif;
 }
 
 #website #logo img {
@@ -403,9 +413,16 @@ footer h1 b a:hover {
     margin: 50px 0px;
 }
 
-#modelViewer model-viewer {
-    height: 600px;
-    width: 600px;
+#modelViewer model-viewer, #modelViewer div.model iframe {
+    height: 300px;
+    width: 300px;
+}
+
+#modelViewer div.model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #modelViewer div {
@@ -444,9 +461,10 @@ footer h1 b a:hover {
     align-items: center;
 }
 
-#modelDiv div#notesModel model-viewer{
+#modelDiv div#notesModel model-viewer, #modelDiv div#notesModel iframe{
     width: 200px;
     height: 200px;
+    border: none !important;
 }
 
 #modelDiv div#notesInfo {
@@ -496,7 +514,8 @@ Note to animate From Bottom to Top and vice versa
     margin: 20px 0px;
     height: 300px !important;
     width: 400px !important;
-    background: url("../img/astronaut.jpg");
+    background: url("../img/micro-organisms.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,7 +533,8 @@ Note to animate From Bottom to Top and vice versa
 }
 
 #twoDPicDiv:hover {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/astronaut.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/micro-organisms.jpg");
+    background-size: cover;
 
 }
 
@@ -531,4 +551,52 @@ Note to animate From Bottom to Top and vice versa
 #modelDiv {
     display: flex;
     width: 500px;
+}
+
+
+/*
+=======================
+    Merchendise
+=======================
+*/
+#merchendise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merchendiseImg {
+    width: 400px;
+    height: 400px;
+}
+
+#merchendise div.slider, #merchendise div.text {
+    width: 45%;
+    margin: 0px 10px;
+}
+
+
+/*
+=======================
+Slider Custom Design
+=======================
+*/
+#carousel-caption {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    border-radius: 20px
+}
+
+/*.carousel-caption {
+    display: relative;
+    top: 80px;
+}*/
+
+.merchendiseCap {
+    display: block !important;
+    color: black !important;
+}
+
+#wormHoleImg {
+    width: 100% !important;
+    height: 500px !important;
 }

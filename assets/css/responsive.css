@@ -27,7 +27,8 @@
         width: 80%;
     }
 
-    #properties, #gotCovered {
+    #properties, #gotCovered, #merchendise {
+    display: grid;
     grid-template-columns: auto auto;
     }
     .cover {
@@ -123,4 +124,6 @@
 #main {
     height: 150vh
 }
+
+
 }
