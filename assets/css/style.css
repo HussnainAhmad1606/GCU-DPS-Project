@@ -39,6 +39,23 @@ By Default Whole website will not shown and loading screen will be shown after 5
 =================
 */
 
+#bookNowBtn {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0px 20px;
+    transition: 0.2s ease all;
+}
+#bookNowBtn:hover {
+    background-color: white;
+    color: black !important;
+}
+#bookNowBtn a:hover {
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black !important;
+}
+
 #website {
     display: none;
 }
@@ -599,4 +616,8 @@ Slider Custom Design
 #wormHoleImg {
     width: 100% !important;
     height: 500px !important;
+}
+
+.p3d-viewer-helpers div a {
+    display: none !important;
 }

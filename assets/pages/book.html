@@ -8,7 +8,7 @@
     <link href="../components/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styling -->
-	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../css/book.css">
 
     <!-- Custom Styling For Responsivenesss -->
     <link rel="stylesheet" href="../css/responsive.css">
@@ -17,10 +17,10 @@
 </head>
 <body>
 
-	
-     <div class="backBtnDiv">
+	<div id="main">
+             <div class="backBtnDiv">
         <a href="../../index.html" class="backToHomePage">< Back to Homepage</a>
-    </div>
+        </div>
      <center>
             <h1>Book Now</h1>
             <p>If You want to book a flight from us then you can easily book a flight for you by using the form below</p>
@@ -43,11 +43,11 @@
                 </div>
                 <div class="form-field">
                     <p>Residential Address: </p>
-                    <input type="email" name="addrerss" required/>
+                    <input type="text" name="addrerss" required/>
                 </div>
                 <div class="form-field">
                     <p>Total Tickets: </p>
-                    <input name="tickets" type="number">
+                    <input name="tickets"value="1" min="0" max="20" type="number">
                 </div>
                 <p><b><h3>Note:</h3> </b>
                     <ul>
@@ -61,6 +61,7 @@
                 <button id="contactFormBtn">Book Now</button>
             </form>
         </div>
+    </div>
 
             <footer>
             <h1>Copyright © 2021</h1>

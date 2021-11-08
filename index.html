@@ -78,7 +78,7 @@
           <a class="nav-link" href="assets/pages/about.html">About Us</a>
         </li>
 
-        <li class="nav-item">
+        <li id="bookNowBtn" class="nav-item">
           <a class="nav-link" href="assets/pages/book.html">Book Now</a>
         </li>
       </ul>
@@ -330,14 +330,14 @@
             loading.style.display = "none";
             website.style.display = "block";
 
-        }, 8000);
+        }, 800,{once: true});
 
 
 
         setTimeout(() => {
            let icon = document.getElementById("loadingIcon");
             icon.style.animation = "loadingSpeedAnimation 1s linear";
-        }, 7000);
+        }, 7000,{once: true});
     </script>
 
 </body>

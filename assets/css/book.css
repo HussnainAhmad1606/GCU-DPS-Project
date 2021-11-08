@@ -9,11 +9,11 @@
 }
 /* 
 =========================
-    Contact Us Form
+    Book Now
 =========================
 */
 #main {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../img/contact-bg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../img/book-bg.jpg");
     background-size: cover;
     color: white;
 }
