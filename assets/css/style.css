@@ -17,6 +17,10 @@ body {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: captionFont;
+    src: url(../fonts/caption.ttf);
+}
 /*
 =======================================================
 Animation for the body when loading screen disappears
@@ -40,19 +44,17 @@ By Default Whole website will not shown and loading screen will be shown after 5
 */
 
 #bookNowBtn {
-    border: 2px solid white;
+    border: 2px solid white !important;
     border-radius: 10px;
     margin: 0px 20px;
+    color: white !important;
     transition: 0.2s ease all;
 }
-#bookNowBtn:hover {
-    background-color: white;
-    color: black !important;
-}
+
 #bookNowBtn a:hover {
     border-radius: 10px;
     border: none;
-    background-color: white;
+    background-color: white !important;
     color: black !important;
 }
 
@@ -81,7 +83,7 @@ By Default Whole website will not shown and loading screen will be shown after 5
     font-size: 18px;
     position: relative;
     top: -50px;
-    font-family: "Sun Valley - Demo", san-serif;
+    font-family: captionFont, san-serif;
 }
 
 #website #logo img {
@@ -430,6 +432,10 @@ footer h1 b a:hover {
     margin: 50px 0px;
 }
 
+.info {
+    padding: 50px;
+}
+
 #modelViewer model-viewer, #modelViewer div.model iframe {
     height: 300px;
     width: 300px;
@@ -476,6 +482,10 @@ footer h1 b a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#animatedNotesList li {
+    margin: 0px 20px;
 }
 
 #modelDiv div#notesModel model-viewer, #modelDiv div#notesModel iframe{
