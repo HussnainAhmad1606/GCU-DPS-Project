@@ -80,3 +80,7 @@ footer h1 b a:hover {
 #minerals img:hover {
     transform: scale(1.05);
 }
+
+ul {
+    margin: 20px 0px;
+}
