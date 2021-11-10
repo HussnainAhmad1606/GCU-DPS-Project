@@ -233,10 +233,19 @@ nav ul li a {
 	Loading Screen When Website Opens
 ==========================================
 */
+body {
+    background-color: var(--GcuRed);
+    z-index: 0;
+}
 canvas {
     background-color: var(--GcuRed);
     width: 100%;
+    z-index: 1;
     height: 100vh;
+}
+body {
+    background-color: #e9ecef;
+    scroll-behavior: smooth;
 }
 #loadingDiv {
     position: absolute;
@@ -252,11 +261,13 @@ canvas {
 }
 
 #loadingIcon {
+    text-shadow: 0 0 10px #151515;
     font-size: 50px;
     position: relative;
     right: 300px;
     color: white;
     transition: 0.1s ease all;
+    padding: 20px;
     animation: loadingAnimation 5s linear;
 }
 
@@ -401,10 +412,10 @@ footer h1 b a:hover {
     background-position: center;
 }
 #AnimalsProp {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/animals.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/animals.jpeg");
     background-position: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 #AtmosphereProp {
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/properties/atmosphere.jpg");
@@ -483,10 +494,10 @@ footer h1 b a:hover {
     justify-content: center;
     align-items: center;
 }
-
-#animatedNotesList li {
-    margin: 0px 20px;
+div#notesModel div iframe {
+    margin: -50px !important;
 }
+
 
 #modelDiv div#notesModel model-viewer, #modelDiv div#notesModel iframe{
     width: 200px;

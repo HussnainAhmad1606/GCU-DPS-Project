@@ -26,6 +26,8 @@
     <!-- For Div Animation -->
  <link rel="stylesheet" href="assets/components/aos/aos.css" />
 
+ 
+
     <title>Space Travel - Travel Around the Space</title>
 </head>
 
@@ -48,7 +50,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul id="menus" class="justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
         </li>
 
         <li class="nav-item">
@@ -60,6 +62,9 @@
         
         <li class="nav-item">
           <a class="nav-link" href="#properties">More Info</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="assets/pages/about-planet.html">About Planet</a>
         </li>
 
         <li class="nav-item">
@@ -86,9 +91,9 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel/1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel/bg-edit.jpeg" class="d-block w-100" alt="...">
                     <div id="carousel-caption" class="carousel-caption d-none d-md-block">
-                        <h1>Fabulous Offers</h1>
+                        <h1 id="typed1">Fabulous Offers</h1>
                         <p>Book now before it get late! For the first 20 customers there is an exclusive offer. They will be given 10% discount.</p>
                     </div>
                 </div>
@@ -124,14 +129,12 @@
                 <div data-aos="zoom-in" class="border border-2 col col-sm-12" id="modelDiv">
 
                     <div class="border" id="notesModel">
-                     <!-- <model-viewer src="assets/models/astronot.obj" alt="VR Headset" auto-rotate camera-controls ar></model-viewer> -->
-                     <!-- <iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/ry1Zl+clean"></iframe> -->
                      <div class="sketchfab-embed-wrapper"> <iframe title="Astronaut" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="300" height="300" src="https://sketchfab.com/models/cc3d2fafba424777ab4f997d6866e1b4/embed"> </iframe></div>
                     </div>
 
                 <div class="border-2" id="notesInfo">
                     <h4>Note Info</h4>
-                    <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ab qui alias sapiente officiis dolorum quasi doloremque vero, quam nobis hic sunt, vel cupiditate sint? Eveniet nesciunt assumenda ratione voluptatem doloremque?</p>
+                    <p>To make your body bear slightly diverse space circumstances during your stay, you will be provided with the protective suits. The internal conditions of suit will be the same as on Earth. Our first 5 Customers will get this suit for absolutly FREE!</p>
                 </div>
 
           </div>
@@ -143,9 +146,16 @@
                         <ul id="animatedNotesList">
                             <li>New Creature found.</li>
                             <li>Another type of chemical reacting in the Organisms
-                                <p></p></li>
+                                <br><b>Reaction 1: </b>
+                                Ethene + Oxygen ---> Carbon Dioxide + Water + heat
+                                
+<br><b>Reaction 2: </b>
+                                Sodium Maleate + Water ---> Ethene + Carbon Dioxide + Sodium Hydroxide + Hydrogen + Heat
+                            </li>
+
                             <li>Tartigrade are also here. Is this </li>
                             <li>Book Now as soon as possible for worm whole because its a limited time offer.</li>
+
                         </ul>
                     </p>
                 </div>
@@ -162,7 +172,7 @@
        <div id="modelViewer">
         <div data-aos="fade-right" class="info">
             <h1>About Astronaut/Spaceship</h1>
-            <p>To make your body bear slightly diverse space circumstances during your stay, you will be provided with the protective suits. The internal conditions of suit will be the same as on Earth. Our first 5 Customers will get this suit for absolutly FREE!</p>
+            <p>Ravianocraft is the only spaceship that travels through worm hole to the far places in the universe. It is the luxury and well-maintained spacecraft with a vast range of facilities. Raviano is the only planet in the universe other than Earth on which life exists. Our tour gives you a chance to explore the diverse forms of life that exist on Raviano. Our spacecraft has well furnished rooms and the most exclusive feature an observatory through which one can have the whole view of universe. This spacecraft is made by the best engineers of Earth, but It is like floating Hotel (also not the ordinary one).  It just feels like home for the new travellers. They experience it as a stay in a luxury hotel, a scientific abode.</p>
         </div>
         
        	<!-- <model-viewer class="border border-2 " data-aos="fade-left" src="assets/models/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar>
@@ -236,22 +246,19 @@
                 <div class="carousel-item active">
                     <img src="assets/img/merchendise/1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h1>Fabulous Offers</h1>
-                        <p>Now Book your tickets with fabulous offers for our all customers.</p>
+                       
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/img/merchendise/2.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h1>Worm Hole Special</h1>
-                        <p>Some representative placeholder content for the second slide.</p>
+                      
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/img/merchendise/3.png" class="d-block w-100" alt="...">
                     <div class="merchendiseCap carousel-caption d-md-block">
-                        <h1>Introducing Economy Class</h1>
-                        <p>Some representative placeholder content for the third slide.</p>
+                       
                     </div>
                 </div>
             </div>
@@ -267,11 +274,14 @@
           </div>
 
           <div class="text border">
-              <h1>Text</h1>
+              <h4>Our Merchendise is now available for all customers. Every customer can buy our Merchendise on <b>Merchendise Section</b>. Premium Members will get free Merchendise with their packages. Our currently offer is now include Merchendise with Economy package.</h4>
           </div>
        </div>
 
        <hr>
+       <center>
+           <h1>Features</h1>
+       </center>
 
         <div data-aos="fade-down" data-aos-duration="1500" id="properties">
             <div class="property" id="plantsProp">
@@ -318,6 +328,7 @@
 
     </div>
 
+    <script src="assets/components/Typed/typed.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/components/bootstrap/bootstrap.bundle.min.js"></script>
@@ -333,8 +344,9 @@
             let body = document.getElementsByTagName("body")[0];
             loading.style.display = "none";
             website.style.display = "block";
+            
 
-        }, 800,{once: true});
+        }, 8000);
 
 
 
@@ -344,6 +356,20 @@
         }, 7000,{once: true});
     </script>
 
+    <!-- <script>
+        var typed = new Typed('#typed1', {
+  strings: ['Fabulus offers', "Awesome Offers"],
+  typeSpeed: 80,
+  backSpeed: 80,
+  loop: true,
+  cursorChar: '|',
+  smartBackspace: true // Default value
+});
+    </script> -->
+
+
+
+    
 </body>
 
 </html>
